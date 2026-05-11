@@ -5,7 +5,8 @@
 .challenge-1 {
   background-color: grey;
   width: 100vw;
-  /* add code below */
+  display:flex; 
+  flex-direction:row; 
 
 
 }
@@ -19,8 +20,7 @@
   background-color: grey;
   width: 100vw;
   display: flex;
-  /* add code below*/
-
+  flex-direction: column;
 
 
 }
@@ -34,7 +34,9 @@
 .challenge-3 {
   background-color: grey;
   width: 100vw;
-  /* add code below */
+  display:flex;
+  flex-direction: column; 
+  align-items: center;
 
 
 }
@@ -48,7 +50,12 @@
   background-color: grey;
   width: 100vw;
   height: 400px;
-  /* add code below */
+  display:flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;     
+  
+
 
 
 
@@ -65,14 +72,15 @@
 .challenge-6a {
   background-color: grey;
   width: 100vw;
-
-  /* top section, add code below */
+  display:flex; 
+  align-items: center; 
 }
 
 .challenge-6b {
   background-color: lightgray;
   width: 100vw;
-  /* bottom section, add code below */
+ align-items: center;
+ 
 
 }
 
@@ -82,7 +90,7 @@
    goal: nested flex
          
 
-for challenge-7 there are three containers
+for challenge-6 there are three containers
 each one has a rule that you will need to use flex properties
 to match the layout, you will also need to use flex:1
 on the children, the rest are properties you have used in past challenges
@@ -90,22 +98,34 @@ on the children, the rest are properties you have used in past challenges
    ============================================= */
 .challenge-7 {
   width: 100vw;
-  height: 320px;
-    /* add code below */
+  height: 320px;  
+  display:flex;  
+ flex-direction: column;
+ flex:1; 
+ 
+  
+  
 
 }
 
 .c-7-child-1 {
   background-color: lightgrey;
-  /* add code below */
+  display:flex; 
+  justify-content:space-around ;
+  flex:1; 
+  align-items: flex-start;
+
 
 
 }
 
 .c-7-child-2 {
   background-color: darkgrey;
+display:flex; 
+justify-content: space-around;
+flex:1; 
+align-items: flex-end;
 
-  /* add code below */
 }
 
 
